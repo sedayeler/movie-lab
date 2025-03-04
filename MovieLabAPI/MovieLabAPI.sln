@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5E2E0312-BB6E-4F8D-B057-4D8771EE7CB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0AFE32FF-1A35-426F-93CC-999C47B51784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLabAPI.Domain", "Core\MovieLabAPI.Domain\MovieLabAPI.Domain.csproj", "{9E094A35-EDF3-4773-8D5C-D238DE2C0337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLabAPI.Application", "Core\MovieLabAPI.Application\MovieLabAPI.Application.csproj", "{7B015B8E-3D15-4061-9DDD-B61029A87D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLabAPI.Persistence", "Infrastructure\MovieLabAPI.Persistence\MovieLabAPI.Persistence.csproj", "{FA12A90B-7477-41C9-A28B-BF7CD5D54B3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLabAPI.Infrastructure", "Infrastructure\MovieLabAPI.Infrastructure\MovieLabAPI.Infrastructure.csproj", "{71197CAF-9635-4F71-B3EC-95E227AAD033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLabAPI.API", "Presentation\MovieLabAPI.API\MovieLabAPI.API.csproj", "{F0E26DA2-DBA3-4EE4-A77A-8200FBBD9C7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E094A35-EDF3-4773-8D5C-D238DE2C0337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E094A35-EDF3-4773-8D5C-D238DE2C0337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E094A35-EDF3-4773-8D5C-D238DE2C0337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E094A35-EDF3-4773-8D5C-D238DE2C0337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B015B8E-3D15-4061-9DDD-B61029A87D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B015B8E-3D15-4061-9DDD-B61029A87D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B015B8E-3D15-4061-9DDD-B61029A87D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B015B8E-3D15-4061-9DDD-B61029A87D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA12A90B-7477-41C9-A28B-BF7CD5D54B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA12A90B-7477-41C9-A28B-BF7CD5D54B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA12A90B-7477-41C9-A28B-BF7CD5D54B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA12A90B-7477-41C9-A28B-BF7CD5D54B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71197CAF-9635-4F71-B3EC-95E227AAD033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71197CAF-9635-4F71-B3EC-95E227AAD033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71197CAF-9635-4F71-B3EC-95E227AAD033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71197CAF-9635-4F71-B3EC-95E227AAD033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E26DA2-DBA3-4EE4-A77A-8200FBBD9C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E26DA2-DBA3-4EE4-A77A-8200FBBD9C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E26DA2-DBA3-4EE4-A77A-8200FBBD9C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E26DA2-DBA3-4EE4-A77A-8200FBBD9C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E094A35-EDF3-4773-8D5C-D238DE2C0337} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7B015B8E-3D15-4061-9DDD-B61029A87D40} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FA12A90B-7477-41C9-A28B-BF7CD5D54B3F} = {5E2E0312-BB6E-4F8D-B057-4D8771EE7CB7}
+		{71197CAF-9635-4F71-B3EC-95E227AAD033} = {5E2E0312-BB6E-4F8D-B057-4D8771EE7CB7}
+		{F0E26DA2-DBA3-4EE4-A77A-8200FBBD9C7B} = {0AFE32FF-1A35-426F-93CC-999C47B51784}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1396D162-0F7B-4894-8F3A-495C5D5647C4}
+	EndGlobalSection
+EndGlobal
