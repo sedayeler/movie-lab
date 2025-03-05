@@ -208,7 +208,7 @@ namespace MovieLabAPI.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "user_movie_actions",
+                name: "user_actions",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
@@ -223,15 +223,15 @@ namespace MovieLabAPI.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_user_movie_actions", x => x.Id);
+                    table.PrimaryKey("PK_user_actions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_user_movie_actions_AspNetUsers_UserId",
+                        name: "FK_user_actions_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_user_movie_actions_movies_MovieId",
+                        name: "FK_user_actions_movies_MovieId",
                         column: x => x.MovieId,
                         principalTable: "movies",
                         principalColumn: "Id",
@@ -286,13 +286,13 @@ namespace MovieLabAPI.Persistence.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_user_movie_actions_MovieId",
-                table: "user_movie_actions",
+                name: "IX_user_actions_MovieId",
+                table: "user_actions",
                 column: "MovieId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_user_movie_actions_UserId",
-                table: "user_movie_actions",
+                name: "IX_user_actions_UserId",
+                table: "user_actions",
                 column: "UserId");
         }
 
@@ -318,7 +318,7 @@ namespace MovieLabAPI.Persistence.Migrations
                 name: "reviews");
 
             migrationBuilder.DropTable(
-                name: "user_movie_actions");
+                name: "user_actions");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

@@ -298,7 +298,7 @@ namespace MovieLabAPI.Persistence.Migrations
                     b.ToTable("reviews");
                 });
 
-            modelBuilder.Entity("MovieLabAPI.Domain.Entities.UserMovieAction", b =>
+            modelBuilder.Entity("MovieLabAPI.Domain.Entities.UserAction", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -335,7 +335,7 @@ namespace MovieLabAPI.Persistence.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("user_movie_actions");
+                    b.ToTable("user_actions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -408,7 +408,7 @@ namespace MovieLabAPI.Persistence.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("MovieLabAPI.Domain.Entities.UserMovieAction", b =>
+            modelBuilder.Entity("MovieLabAPI.Domain.Entities.UserAction", b =>
                 {
                     b.HasOne("MovieLabAPI.Domain.Entities.Movie", "Movie")
                         .WithMany("UserMovieActions")

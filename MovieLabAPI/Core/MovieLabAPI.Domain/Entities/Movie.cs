@@ -15,7 +15,7 @@ namespace MovieLabAPI.Domain.Entities
         public string PosterPath { get; set; }
         public float Rating { get; set; }
         public int VoteCount { get; set; }
-        public ICollection<UserMovieAction> UserMovieActions { get; set; }
+        public ICollection<UserAction> UserMovieActions { get; set; }
         public ICollection<Review> Reviews { get; set; }
     }
 }

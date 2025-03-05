@@ -12,7 +12,7 @@ namespace MovieLabAPI.Domain.Entities.Identity
         public string FullName { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenEndDate { get; set; }
-        public ICollection<UserMovieAction> UserMovieActions { get; set; }
+        public ICollection<UserAction> UserMovieActions { get; set; }
         public ICollection<Review> Reviews { get; set; }
     }
 }

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\MovieLabAPI.Application\MovieLabAPI.Application.csproj" />
     <ProjectReference Include="..\..\Core\MovieLabAPI.Domain\MovieLabAPI.Domain.csproj" />
   </ItemGroup>
 

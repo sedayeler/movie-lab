@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MovieLabAPI.Domain.Entities
 {
-    public class UserMovieAction : BaseEntity
+    public class UserAction : BaseEntity
     {
         public bool IsFavorite { get; set; }
         public int? Rating { get; set; }

@@ -17,7 +17,7 @@ namespace MovieLabAPI.Persistence.Contexts
         }
 
         public DbSet<Movie> movies { get; set; }
-        public DbSet<UserMovieAction> user_movie_actions { get; set; }
+        public DbSet<UserAction> user_actions { get; set; }
         public DbSet<Review> reviews { get; set; }
     }
 }
