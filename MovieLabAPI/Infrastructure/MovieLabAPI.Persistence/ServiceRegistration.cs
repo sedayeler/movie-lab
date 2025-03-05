@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MovieLabAPI.Application.Abstractions.Services;
 using MovieLabAPI.Domain.Entities.Identity;
 using MovieLabAPI.Persistence.Contexts;
+using MovieLabAPI.Persistence.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +21,8 @@ namespace MovieLabAPI.Persistence
             services.AddIdentityCore<User>()
                 .AddRoles<Role>()
                 .AddEntityFrameworkStores<MovieLabAPIDbContext>();
+
+            services.AddScoped<IUserService, UserService>();
         }
     }
 }
