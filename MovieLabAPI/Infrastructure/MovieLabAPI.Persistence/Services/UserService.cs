@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using MovieLabAPI.Application.Abstractions.Services;
 using MovieLabAPI.Application.DTOs;
+using MovieLabAPI.Application.DTOs.User;
 using MovieLabAPI.Domain.Entities.Identity;
 using System;
 using System.Collections.Generic;
@@ -40,6 +42,33 @@ namespace MovieLabAPI.Persistence.Services
                 response.Message = string.Join(" | ", result.Errors.Select(e => e.Description));
 
             return response;
+        }
+
+        public async Task<List<ListUser>> GetAllUsersAsync()
+        {
+            List<User> users = await _userManager.Users.ToListAsync();
+            return users.Select(u => new ListUser()
+            {
+                Id = u.Id,
+                FullName = u.FullName,
+                Username = u.UserName,
+                Email = u.Email
+            }).ToList();
+        }
+
+        public async Task<ListUser> GetByIdUserAsync(string id)
+        {
+            User? user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+                throw new Exception("User not found");
+
+            return new ListUser()
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                Username = user.UserName,
+                Email = user.Email
+            };
         }
     }
 }

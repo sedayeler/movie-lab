@@ -16,8 +16,4 @@
     <ProjectReference Include="..\MovieLabAPI.Domain\MovieLabAPI.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Queries\" />
-  </ItemGroup>
-
 </Project>
