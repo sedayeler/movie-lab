@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLab.Domain", "Core\MovieLab.Domain\MovieLab.Domain.csproj", "{FC329836-B551-4886-B408-6931BC1C89EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLab.Application", "Core\MovieLab.Application\MovieLab.Application.csproj", "{6B02FD76-3F4F-4FE3-B48D-A330B5D075ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC329836-B551-4886-B408-6931BC1C89EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC329836-B551-4886-B408-6931BC1C89EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC329836-B551-4886-B408-6931BC1C89EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC329836-B551-4886-B408-6931BC1C89EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B02FD76-3F4F-4FE3-B48D-A330B5D075ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B02FD76-3F4F-4FE3-B48D-A330B5D075ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B02FD76-3F4F-4FE3-B48D-A330B5D075ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B02FD76-3F4F-4FE3-B48D-A330B5D075ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC329836-B551-4886-B408-6931BC1C89EC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6B02FD76-3F4F-4FE3-B48D-A330B5D075ED} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FD3B38F-59B7-4886-B928-B5B3529893BF}
+	EndGlobalSection
+EndGlobal
