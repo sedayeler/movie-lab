@@ -7,4 +7,15 @@
     <UserSecretsId>317a736f-8a67-434a-a75d-60aa385748fc</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\MovieLab.Persistence\MovieLab.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
